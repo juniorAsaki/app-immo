@@ -1,0 +1,104 @@
+<header class="header">
+  <div class="overlay" data-overlay></div>
+  <div class="header-top">
+    <div class="container">
+      <a href="tel:+01123456790" class="helpline-box">
+        <div class="icon-box">
+          <i class="bi bi-telephone-forward"></i>
+        </div>
+        <div class="wrapper">
+          <p class="helpline-title">Pour nous contactez :</p>
+          <p class="helpline-number">00 (225) 0707008488</p>
+        </div>
+      </a>
+      <a href="#" class="logo">
+        <h2 class="h1 hero-title fs-2">SynImmo</h2>
+      </a>
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom border mt-3 navbar sticky-top">
+    <div class="container">
+      <ul class="social-list">
+        <li>
+          <a href="#" class="social-link">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="images/logo-blue.svg" alt="Tourly logo">
+          </a>
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>A propos</a>
+          </li>
+          <li>
+            <a href="#destination" class="navbar-link" data-nav-link>Nos biens</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex">
+        <div class="col-md-8 ">
+          <a class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#login">Connecter Se</a>
+        </div>
+        <div class="col ">
+          <a class="btn btn-outline-primary"  data-bs-toggle="modal" data-bs-target="#register">S'inscrit</a>
+        </div>
+      </div>
+      <!-- Modal login-->
+      <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginLabel">Se connecter</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center" >
+              <app-login></app-login>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Register-->
+      <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="registerLabel">S'inscrit</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center" >
+              <app-register></app-register>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+

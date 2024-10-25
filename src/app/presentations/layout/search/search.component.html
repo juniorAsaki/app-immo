@@ -1,0 +1,18 @@
+<div class="container">
+  <form action="" class="tour-search-form">
+    <div class="input-wrapper">
+      <label for="destination" class="input-label">Rechercher / Ville</label>
+      <input type="text" name="destination" id="destination" required placeholder="Entrer la destination"
+             class="input-field">
+    </div>
+    <div class="input-wrapper">
+      <label for="prix" class="input-label">Pax Number*</label>
+      <input type="number" name="prix" id="prix" required placeholder="prix" class="input-field" min="10000" max="200000">
+    </div>
+    <div class="input-wrapper">
+      <label for="checkin" class="input-label">Date de disponibilité</label>
+      <input type="date" name="checkin" id="checkin" required class="input-field">
+    </div>
+    <button type="submit" class="btn btn-dark">Rechercher</button>
+  </form>
+</div>

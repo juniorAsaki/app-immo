@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<section class="list">
+  <h1 class="text-light  text-uppercase">Maison a louer</h1>
+</section>
+<div class="mt-5 mb-5 border" >
+  <div class="container mt-5 mb-5">
+    <app-search></app-search>
+  </div>
+  <div class="grid-container liste">
+    @for (temp of temps; track temp){
+      <div class="card col col-md-6 item" style="width: 18rem;">
+        <img src="/images/gallery-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Maison a louer</h5>
+          <ul>
+            <li>3 chambres</li>
+            <li>1 chambres</li>
+            <li>2 Salles de bain</li>
+            <li>1 terrase</li>
+          </ul>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Voir plus</a>
+            <a  [ngClass]="(temp === 3 ) ? 'btn btn-success bi bi-check-circle-fill':'btn btn-danger bi bi-check-circle-fill'"></a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  <div class="container  ">
+    <nav style="position:relative;left: 50%;margin-top: 30px" aria-label="Page navigation example">
+      <ul class="pagination">
+
+      </ul>
+    </nav>
+  </div>
+</div>

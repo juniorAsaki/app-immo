@@ -1,0 +1,9 @@
+.grid-container{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes de largeur égale */
+  gap: 20px; /* Espacement entre les colonnes et les lignes */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
